@@ -1,0 +1,224 @@
+#navbar {
+    background: #F3F1DA;
+}
+
+#top-header .navbar {
+    position: relative;
+}
+
+#top-header .brand {
+    position: absolute;
+    left: 50%;
+    margin-left: -129px !important;
+    display: block;
+    color: gray;
+    font-size: 18px;
+    padding-top: 6px;
+    width: 267px;
+}
+
+#top-header #H_logo {
+    top: 1px;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    vertical-align: middle;
+}
+
+#top-header #H_logo:hover {
+    border: 1px solid #004b8d;
+    border-radius: 50%;
+}
+
+#top-header #H_logo:hover path.path_background {
+    fill: transparent;
+}
+
+#top-header #H_logo:hover path.path_element,
+#top-header #H_logo:hover path.path_sub_element {
+    fill: #004b8d;
+}
+
+#top-header .svg_icon {
+    height: 54px;
+    width: 54PX;
+}
+
+#top-header .navbar-nav > li > a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#top-header .nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 2px 6px 3px;
+}
+
+#top-header .navbar-right {
+    margin-right: 18px
+}
+
+#top-header.navbar-default {
+    background-color: #004B8D;
+    border: 0;
+}
+
+#top-header.navbar-default .navbar-toggle,
+#top-header.navbar-default .navbar-toggle:hover,
+#top-header.navbar-default .navbar-toggle:focus {
+    background: #ff4b00;
+    border-color: #ff4b00;
+    margin: 0;
+    border-radius: 0;
+    padding: 13px 12px;
+}
+
+#top-header .navbar-toggle .icon-bar {
+    width: 35px;
+    height: 5px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+#top-header.navbar-default a {
+    color: #fff;
+}
+
+#brand-mobile {
+    display: none;
+    line-height: 50px;
+    padding-left: 15px;
+}
+
+#top-header .svg_icon:hover {
+    background: #004B8D;
+}
+
+#top-header .svg_icon:hover path {
+    fill: #fff;
+}
+
+#top-header #icon-google-plus:hover {
+    background: #d34836 !important;
+
+}
+
+#top-header #icon-facebook:hover {
+    background: #3b5998;
+}
+
+#top-header #icon-email:hover {
+    background: #af4a6a;
+}
+
+#top-header #icon-blog:hover {
+    background: #6da070;
+}
+
+#top-header #main-menu {
+    display: none;
+    text-transform: capitalize;
+}
+
+#top-header a.tooltip {
+    outline: none;
+}
+
+#top-header a.tooltip strong {
+    line-height: 30px;
+}
+
+#top-header a.tooltip:hover {
+    text-decoration: none;
+}
+
+#top-header a.tooltip span {
+    z-index: 10;
+    display: none;
+    padding: 4px 10px;
+    margin-top: 0;
+    margin-left: -145px;
+    width: 200px;
+    line-height: 16px;
+}
+
+#top-header a.tooltip:hover span {
+    display: block;
+    position: absolute;
+    color: #666;
+    border: 1px solid #DCA;
+    background: #fffAF0;
+}
+
+#top-header .callout {
+    z-index: 20;
+    position: absolute;
+    top: -17px;
+    border: 0;
+    right: 22px;
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+}
+
+/*CSS3 extras*/
+#top-header a.tooltip span {
+    border-radius: 4px;
+    box-shadow: 1px 2px 7px #333;
+}
+
+@media (max-width: 768px) {
+    #brand-mobile {
+        display: block;
+    }
+
+    #top-header #navbar {
+        background: #004B8D;
+    }
+
+    #top-header .brand {
+        display: none;
+    }
+
+    #top-header #main-menu {
+        display: block;
+    }
+
+    #top-header #main-menu .nav-pills > li {
+        float: none;
+    }
+
+    #top-header #main-menu .nav-pills > li a {
+        font-size: 14px;
+        padding: 12px;
+        text-align: center;
+        border: 0;
+    }
+
+    #top-header #main-menu .col-sm-12 {
+        padding: 0;
+    }
+
+    #top-header .nav.navbar-nav.navbar-right {
+        float: none;
+        width: 251px;;
+        margin: 0 auto;
+    }
+
+    #top-header .nav.navbar-nav.navbar-right > li {
+        display: inline-block;
+    }
+
+    /*#top-header .nav.navbar-nav.navbar-right > li:last-child {*/
+        /*padding-left: 20px;*/
+    /*}*/
+
+    #top-header .svg_icon {
+        border-color: #ddd;
+    }
+
+    #top-header .svg_icon path {
+        fill: #ddd;
+    }
+}

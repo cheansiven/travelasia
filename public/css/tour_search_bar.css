@@ -1,0 +1,14 @@
+.tour_search_bar {
+    padding-bottom: 40px;
+    padding-top: 30px;
+    background: #fff;
+}
+
+#search_tour_form .btn-submit {
+    padding: 4px 12px;
+    background: #004B8D;
+    border: 0;
+    color: #fff;
+    border-radius: 4px;
+    min-width: 100px;
+}

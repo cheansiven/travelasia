@@ -1,0 +1,493 @@
+/* style the outer div to give it width */
+.menumain {
+    width: 100%;
+    height: 75px;
+    margin-top: -45px;
+    margin-left: 0;
+    position: relative;
+    background: #004B8D;
+    color: #fff;
+}
+
+/* remove all the bullets, borders and padding from the default list styling */
+.menumain ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.menumain ul ul {
+    width: 150px;
+}
+
+/* float the list to make it horizontal and a relative positon so that you can control the dropdown menumain positon */
+.menumain li {
+    float: left;
+    text-align: center !important;
+
+}
+
+.menumain a, .menumain a:visited {
+    display: block;
+    font-size: 19px;
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-left: 15px;
+    padding-right: 14px;
+    padding-top: 5px;
+    border: 0;
+    line-height: 70px;
+    text-transform: uppercase;
+}
+
+.menumain a:hover {
+    text-decoration: none;
+}
+
+.menumain a {
+    display: block;
+    font-size: 19px;
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-left: 15px;
+    margin-top: 20px;
+    padding-right: 25px;
+    border: 0;
+    line-height: 30px;
+    text-transform: uppercase;
+    border-right: 1px solid #fff;
+}
+
+.menumain li:first-child a {
+    padding-left: 35px;
+}
+
+.menumain li:last-child a {
+    border-right: 0;
+}
+
+.menumain a.lastmenu {
+    background: none !important;
+    margin-left: 15px;
+    padding-right: 0;
+}
+
+/* a hack so that IE5.5 faulty box model is corrected */
+* html .menumain a, * html .menumain a:visited {
+    width: 150px;
+}
+
+/* style the second level background */
+.menumain ul ul a.drop, .menumain ul ul a.drop:visited {
+    background: #949e7c;
+}
+
+/* style the second level hover */
+.menumain ul ul a.drop:hover {
+    background: #c9ba65;
+}
+
+.menumain ul ul :hover > a.drop {
+    background: #c9ba65;
+}
+
+/* style the third level background */
+.menumain ul ul ul a, .menumain ul ul ul a:visited {
+    background: #e2dfa8;
+}
+
+/* style the third level hover */
+.menumain ul ul ul a:hover {
+    background: #b2ab9b;
+    line-height: 65px;
+}
+
+.menumain ul ul ul :hover > a {
+    background: #b2ab9b;
+    line-height: 65px;
+}
+
+/* style the table so that it takes no part in the layout - required for IE to work */
+.menumain table {
+    border-collapse: collapse;
+    border: 0;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+}
+
+/* hide the sub levels and give them a positon absolute so that they take up no room */
+.menumain ul ul {
+    visibility: hidden;
+    position: absolute;
+    bottom: 31px;
+    left: 0;
+    width: 150px;
+}
+
+.menumain ul ul {
+    bottom: 100px;
+}
+
+/* position the third level flyout menumain */
+.menumain ul ul ul {
+    left: 150px;
+    bottom: 0;
+    width: 150px;
+}
+
+/* position the third level flyout menumain for a left flyout */
+.menumain ul ul ul.left {
+    left: -150px;
+}
+
+/* style the second level links */
+.menumain ul ul a, .menumain ul ul a:visited {
+    background: url(../images/main-bg-02.png) repeat;
+    color: #FFF;
+    height: auto;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    margin-bottom: 0;
+    /* yet another hack for IE5.5 */
+    position: relative;
+}
+
+.menumain ul ul a:hover {
+    color: #F00 !important;
+}
+
+* html .menumain ul ul a {
+    width: 250px;
+}
+
+/* 4 colums*/
+.for_colums {
+    width: 910px;
+}
+
+.mianpopup {
+    background: rgba(0, 75, 141, 0.8); /* new style */
+    float: left;
+    padding: 18px 0 0 18px;
+    text-align: left;
+}
+
+.blogpopup {
+    float: left;
+    /*padding-right:20px;*/
+    padding-left: 50px; /* new */
+}
+
+.minipopup a {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 14px;
+    line-height: 17px !important;
+}
+
+.minipopup {
+    width: 203px;
+    height: 160px;
+}
+
+.minipopup a:hover {
+    font-size: 14px;
+}
+
+.for_colums a {
+    background: none !important;
+    width: 203px !important;
+    float: left;
+
+}
+
+.for_colums ul ul a:visited {
+    background: none !important;
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    border: 0 !important;
+    padding-left: 0;
+    line-height: 35px;
+}
+
+.for_colums ul li a:hover {
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    border: 0 !important;
+    background: none !important;
+    padding-left: 0;
+    line-height: 35px;
+}
+
+.for_colum {
+    width: 890px;
+    min-height: 100px;
+    padding: 10px;
+    background: rgba(0, 75, 141, 0.8);
+}
+
+/* style the top level hover */
+.menumain a:hover, .menumain ul ul a:hover {
+    color: #fff;
+}
+
+.menumain :hover > a, .menumain ul ul :hover > a {
+    color: #fff;
+}
+
+/* make the second level visible when hover on first level list OR link */
+.menumain ul li:hover ul,
+.menumain ul a:hover ul {
+    visibility: visible;
+    height: auto;
+    width: 100%;
+}
+
+/* new style */
+#footer ul li ul li {
+    width: 100%;
+    padding: 0;
+}
+
+#footer ul li ul li div.text_leftpopup {
+    padding: 10px;
+}
+
+#footer ul li ul li .mianpopup {
+    width: 100%;
+    padding: 20px 0;
+    text-align: justify;
+    height: auto;
+}
+
+ul li:first-child ul li .blogpopup {
+    padding-right: 74px;
+    padding-left: 74px;
+}
+
+/* end new style */
+
+/* keep the third level hidden when you hover on first level list OR link */
+.menumain ul :hover ul ul {
+    display: none;
+}
+
+/* keep the fourth level hidden when you hover on second level list OR link */
+.menumain ul :hover ul :hover ul ul {
+    display: none;
+}
+
+/* make the third level visible when you hover over second level list OR link */
+.menumain ul :hover ul :hover ul {
+    display: block;
+    bottom: 0;
+}
+
+/* make the fourth level visible when you hover over third level list OR link */
+.menumain ul :hover ul :hover ul :hover ul {
+    display: block;
+    bottom: 0;
+}
+
+.image_menupopup {
+    float: left;
+    margin-top: 18px;
+    margin-right: 0;
+}
+
+.text_leftpopup {
+    width: 710px;
+    float: left;
+    text-align: left !important;
+}
+
+.text_leftpopup h2 {
+    color: #FFF;
+}
+
+.text_leftpopup {
+    font-family: century_gothic, Arial, sans-serif !important;
+    letter-spacing: normal !important;
+    font-size: 14px !important;
+    text-transform: none !important;
+}
+
+.second_popup {
+    margin-left: -12px;
+}
+
+.space_menu2 {
+    margin-left: -147px !important;
+}
+
+.space_menu3 {
+    margin-left: -232px !important;
+}
+
+.space_menu4 {
+    margin-left: -390px !important;
+}
+
+.space_menu5 {
+    margin-left: -516px !important;
+}
+
+.space_menu6 {
+    margin-left: -606px !important;
+}
+
+.space_menu7 {
+    margin-left: -700px !important;
+}
+
+.space_menu8 {
+    margin-left: -832px !important;
+}
+
+.blog_popup {
+    min-height: 100px;
+    padding-top: 5px !important;
+    margin: 0;
+    float: left;
+}
+
+.menuTowLine {
+    line-height: 18px !important;
+}
+
+.menuNoActive {
+    background: none !important;
+    cursor: text !important;
+}
+
+.text-popup-title {
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: eurostylenormal, Arial, sans-serif !important;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    font-weight: normal;
+}
+
+/* 		New sub page 		*/
+body#sub-page .bgstretcher-area {
+    height: 20%
+}
+
+.sub-menu ul {
+    background: #004B8D;
+    padding: 8px;
+    margin: 0;
+}
+
+.sub-menu a {
+    color: #fff;
+}
+
+.sub-menu ul li {
+    padding: 3px 15px;
+    border-right: 1px solid;
+}
+
+.sub-menu ul li:last-child {
+    border-right: none;
+}
+
+.descriptions {
+    padding-bottom: 30px;
+}
+
+.tour_bar {
+    border: 1px dotted;
+    width: 103%;
+    margin-left: -15px;
+}
+
+.tour_block {
+    margin: 15px 0;
+}
+
+.menumain > ul {
+    padding: 20px 0 0 0;
+    margin: 0;
+    list-style-type: none;
+    display: -webkit-flex; /* Safari */
+    -webkit-justify-content: space-around; /* Safari 6.1+ */
+    display: flex;
+    justify-content: space-around;
+}
+
+.menumain li:first-child a {
+    padding-left: 30px;
+}
+
+.menumain > ul > li:last-child {
+    padding-right: 0;
+}
+
+.menumain > ul > li a {
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-left: 0;
+    margin-top: 0;
+    line-height: 30px;
+    text-transform: uppercase;
+    border-right: 1px solid #fff;
+    padding-right: 30px;
+}
+
+.menumain > ul > li:hover ul {
+    margin-bottom: -58px;
+    padding-bottom: 30px;
+}
+
+.menumain  ul > li > ul > li {
+    padding: 0 0 30px 0;
+}
+
+.menumain ul > li ul a:hover {
+    color: #CCCC00!important;
+}
+
+.for_columns a {
+    background: none !important;
+    width: 203px !important;
+    float: left;
+}
+
+.for_columns ul ul a:visited {
+    background: none !important;
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    border: 0 !important;
+    padding-left: 0;
+    line-height: 35px;
+}
+
+.for_columns ul li a:hover {
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    border: 0 !important;
+    padding-left: 0;
+    line-height: 35px;
+}
+
+.for_column {
+    width: 890px;
+    min-height: 100px;
+    padding: 10px;
+    background: rgba(0, 75, 141, 0.8);
+}

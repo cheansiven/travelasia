@@ -1,0 +1,43 @@
+#sub-menu .nav {
+    background: #004B8D;
+}
+
+#sub-menu .nav li {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#sub-menu .nav a, #sub-menu .nav a:hover, #sub-menu .nav a:visited, #sub-menu .nav a:active, #sub-menu .nav a.active {
+    background: transparent;
+    color: #fff;
+    border-right: 1px solid #fff;
+    padding: 0 15px;
+    border-radius: 0;
+}
+
+#sub-menu .nav li:nth-last-child(2) a {
+    border: 0;
+}
+
+#sub-menu .btn-useful-info {
+    text-transform: uppercase;
+    color: #fff;
+    padding-right: 10px;
+    padding-left: 10px;
+    background: #002b53;
+    margin: 0;
+    border: 0;
+}
+
+#sub-menu .btn-useful-info a, #sub-menu .btn-useful-info a:hover,
+#sub-menu .btn-useful-info a:active, #sub-menu .btn-useful-info a:focus {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+#sub-menu svg {
+    width: 20px;
+    height: 20px;
+    margin-bottom: -5px;
+}

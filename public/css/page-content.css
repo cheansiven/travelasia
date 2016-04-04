@@ -1,0 +1,296 @@
+#container {
+    max-width: 1095px;
+    margin-top: 150px;
+    color: #4D4D4D;
+}
+
+#container.home_page_container {
+    min-height: 100%;
+    margin-top: 0;
+}
+
+#blog_content {
+    font-size: 14px;
+}
+
+.blog-body {
+    background: #F3F1DA;
+    padding: 20px;
+    border-top: 2px dotted #777;
+}
+
+.blog-header {
+    padding: 20px 30px;
+}
+
+.blog-body .top-title {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#container h1 {
+    font-size: 24px !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #4D4D4D;
+    font-weight: normal
+}
+
+.contents_img {
+    float: left;
+    margin-right: 20px;
+}
+
+.contents_img img {
+    float: none;
+}
+
+.content_text {
+    margin-top: -20px;
+}
+
+.content_text h2 {
+    padding-top: 0;
+    font-size: 20px;
+}
+
+.blog-body.blog-grid .grid:hover {
+    background: #004B8D;
+}
+
+.blog-body.blog-grid .grid:hover a {
+    color: #fff;
+}
+
+.blog-body.blog-grid .grid-content {
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.blog-body.blog-grid .grid-content h2 {
+    padding-bottom: 20px;
+    padding-top: 0;
+}
+
+.blog-body:not(.blog-grid):hover {
+    background: #f6f6ab;
+}
+
+.blog-body .buttons {
+    padding: 20px 0 10px 20px;
+    overflow: hidden;
+    float:right;
+    margin: 0 0 -10px 0;
+    visibility: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.blog-body:hover .buttons {
+    visibility: visible;
+}
+
+.blog-body .btn, .blog-body .btn:visited {
+    border: 2px solid #628897;
+    padding: 8px 14px;
+    margin-left: 15px;
+    color: #628897!important;
+    text-transform: lowercase;
+    cursor: pointer;
+}
+
+.blog-body .btn:hover {
+    background: #628897;
+    color: #fff!important;
+}
+
+.blog-body .btn_special_offer,
+.blog-body .btn_special_offer:hover,
+.blog-body .btn_special_offer:visited {
+    text-transform: uppercase;
+    color: #fff!important;
+    background: #ff4b00;
+    border-color: #ff4b00;
+}
+
+.blog-body .btn_special_offer:before {
+    content: "\2606";
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.blog-body  .form-control {
+    width: 100%!important;
+}
+
+.blog-body  .control-label {
+    width: 123px;
+}
+
+.blog-body  .input_control {
+    padding-right: 0;
+}
+
+.blog-body  input[type="text"],
+.blog-body input[type="email"] {
+    border-radius: 2px;
+    border-color: #999;
+}
+
+.blog-body  .enquire_from_container {
+    display: none;
+    visibility: visible!important;
+    overflow: hidden!important;
+    margin-top: 10px!important;
+    padding-top: 10px!important;
+    width: 100%;
+}
+
+.blog-body  .enquire_form .control-label[for="inputNumberOfPeople"],
+.blog-body  .enquire_form .control-label[for="inputDate"] {
+    padding-top: 0;
+    margin-top: -10px;
+}
+
+.blog-body  .enquire_form .btn_submit, .enquire_form .btn_submit:hover {
+    padding: 1px 14px;
+    margin-left: 15px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    color: #fff!important;
+    background: #ff4b00;
+    border-color: #ff4b00;
+    font-size: 12px;
+}
+
+.blog-body  .ui-effects-wrapper {
+    overflow: inherit!important;
+}
+
+.blog-body  .enquire_from_container .messages {
+    margin-top: -10px;
+}
+
+.blog-body  .enquire_from_container .messages label {
+    color: #ff4b00;
+    font-size: 13px;
+}
+
+.blog-body  .day_night {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #628897;
+    font-weight: 600;
+}
+
+.blog-body .special_offer_form_container {
+    color: #ff4b00;
+    padding-top: 20px;
+    display: none;
+}
+
+.blog-body .special_offer_form_container table {
+    width: 100%;
+    border: 0;
+}
+
+.blog-body .special_offer_form_container table  tr td {
+    vertical-align: middle;
+    text-align: center;
+    padding: 4px 12px;
+}
+
+.blog-body .special_offer_form_container table  tr td:first-child {
+    min-width: 200px;
+}
+
+.blog-body .special_offer_form_container table  tr td:nth-child(2) {
+    min-width: 50px;
+    font-size: 40px;
+}
+
+.blog-body .special_offer_form_container table  tr td:last-child {
+    text-align: left;
+}
+
+.blog-body button.Zebra_DatePicker_Icon_Inside_Right {
+    top: 8px!important;
+    right: 0!important;
+    width: 20px!important;
+    height: 20px!important;
+}
+
+.blog-body .Zebra_DatePicker.dp_visible {
+    left: 799.469px!important
+}
+
+.blog-body .text-center {
+    text-align: center;
+}
+
+.blog-body .blog-header, .blog-content {
+    background: #F3F1DA;
+}
+
+.blog-body .tour_container #demo_header .home {
+    margin-top: 0;
+    line-height: 70px;
+}
+
+.blog-body .tour_container #demo_header #H_logo {
+    top: 1px;
+}
+
+.blog-body .tour_container #demo_header .svg_icon {
+    width: 54px;
+    height: 54px;
+}
+
+/* jquery ui tabs override style */
+#hotel_tabs {
+    border: 0;
+    background: transparent;
+}
+
+#hotel_tabs.ui-tabs .ui-tabs-panel {
+    border: 1px solid #808080;
+}
+
+#hotel_tabs.ui-tabs .ui-tabs-nav {
+    border: 0;
+    background: transparent;
+    padding: 0;
+}
+
+#hotel_tabs.ui-tabs .ui-tabs-nav li {
+    border: 0;
+    border-radius: 0;
+}
+
+#hotel_tabs .ui-state-default,
+#hotel_tabs .ui-widget-content .ui-state-default,
+#hotel_tabs .ui-widget-header .ui-state-default {
+    background: #808080;
+}
+
+#hotel_tabs .ui-state-active,
+#hotel_tabs .ui-widget-content .ui-state-active,
+#hotel_tabs .ui-widget-header .ui-state-active
+{
+    background: #1A1A1A;
+}
+
+#hotel_tabs .ui-state-default.ui-tabs-active.ui-state-active {
+    background: #1A1A1A;
+}
+
+#hotel_tabs .ui-state-default a,
+#hotel_tabs .ui-state-default a:link,
+#hotel_tabs .ui-state-default a:visited {
+    color: #fff;
+}
+
+.btnShowGallery {
+    cursor: pointer;
+}

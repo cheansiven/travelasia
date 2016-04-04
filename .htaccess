@@ -1,0 +1,52 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =https
+RewriteRule ^(.*)$ http://www.travelasia.travel/$1 [L,R=301]
+
+RewriteRule ^(.*)/(.*)/exchange-link.html /404 [R=301,L]
+
+# Redirect non-www to www
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^system.*
+RewriteCond $1 !^(index\.php|images|js|uploads|css|robots\.txt)
+RewriteRule ^(.*)$ /index.php/$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
+
+# Use PHP 5.3
+#AddType application/x-httpd-php54 .php
+
+#ErrorDocument 404 http://sejour-cambodge.com/404/
+
+########################################
+###     Settings for mod_rewrite     ###
+########################################
+#<IfModule mod_rewrite.c>
+#RewriteEngine On
+
+#RewriteRule ^home/?$ index.php [NC]
+#RewriteRule ^([A-Za-z0-9-]+)/?$ $1.php [NC]
+
+#</IfModule>
+Redirect 301 /tours /tour-operator-in-cambodia.html
+Redirect 301 /destinations /asian-destinations-luxury-tours.html
+Redirect 301 /holiday-types /holiday-vacations-in-the-kingdom-of-cambodia.html
+Redirect 301 /best-value /best-packages-to-cambodia.html
+Redirect 301 /hotels /directory-hotel-in-siem-reap.html
+Redirect 301 /experiences /tips-to-traveling-to-cambodia.html
+Redirect 301 /enquiry /enquiry-about-cambodia-tour
+Redirect 301 /tour/1/travel-like-a-local-in-battambang /tour/1/while-in-cambodia-live-like-them.html
+
+Redirect 301 /asian-destinations-luxury-tours.html /asian-and-cambodia-tours-destinations.html
+Redirect 301 /holiday-vacations-in-the-kingdom-of-cambodia.html	/holiday-tours-in-cambodia.html
+Redirect 301 /best-packages-to-cambodia.html /tour-and-travel-agency-in-cambodia.html
+Redirect 301 /tips-to-traveling-to-cambodia.html /tour-experts-in-cambodia
+Redirect 301 /mice-incentive-cambodia.html /mice-in-cambodia.html
+
+Redirect 301 /directory-hotel-in-siem-reap.html/4/south-coast /directory-hotel-in-cambodia.html/4/south-coast
+
+Redirect 301 /directory-hotel-in-siem-reap.html/3/phnom-penh-around /directory-hotel-in-cambodia.html/3/phnom-penh-around

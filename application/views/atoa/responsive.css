@@ -1,0 +1,122 @@
+.lg-hide {
+    display: none;
+}
+
+@media screen and (min-width: 1600px) {
+    .slogan {
+        font-size: 46px!important;
+        line-height: 60px!important;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #sub-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #top-header .brand {
+        left: 145px!important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #container.home_page_container {
+        margin-top: 150px!important;
+    }
+
+    .slogan {
+        display: none;
+    }
+
+    .lg-hide {
+        display: block!important;
+    }
+
+    .lg-show {
+        display: none!important;
+    }
+
+    .menumain {
+        display: none;
+    }
+
+    .blog-body .day_night {
+        position: relative!important;
+        padding-bottom: 15px;
+    }
+
+    .blog-body .buttons {
+        visibility: visible!important;
+    }
+
+    .blog-body .enquire_from_container .control-label {
+        width: 100%;
+        padding-left:0;
+    }
+
+    .blog-body .enquire_from_container .number_of_people_label {
+        padding-left: 15px;
+        margin-top: 15px!important;
+    }
+
+    .blog-body .input_control,
+    .enquire_from_container .col-sm-7.row.input_control,
+    .enquire_from_container .col-sm-9.row.input_control
+    {
+        padding-right: 15px!important;
+    }
+
+    .enquire_from_container .col-sm-9.row.input_control.firstname_container {
+        padding-right: 10px!important;
+    }
+
+    .number_of_people_container {
+        padding-left: 30px;
+    }
+
+    .blog-body .enquire_form .btn_submit {
+        margin-right: -15px;
+    }
+
+    .blog-body .day_night {
+        right: 0!important;
+        top: 0!important;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .contents_img {
+        float: left;
+        margin-right: 0;
+        width: 100%;
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+    .contents_img img {
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .Zebra_DatePicker.dp_visible {
+        margin-left: -20px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .blog-body .buttons {
+        width: 100%;
+        float: left;
+    }
+
+    .blog-body .buttons .btn {
+        width: 100%;
+        float: left;
+        display: block;
+        margin-bottom: 20px;
+        margin-left: -15px;
+    }
+}
